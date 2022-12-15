@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>ee_order_status_tracking</id>
+    <version>1.0.0</version>
+    <status>active</status>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <default_language>ru</default_language>
+
+    <has_icon>Y</has_icon>
+    <supplier>efimchenko.ru</supplier>
+    <supplier_link>https://efimchenko.ru</supplier_link>
+
+    <settings layout="separate" edition_type="ROOT,VENDOR,STOREFRONT">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="ee_order_status_tracking_active">                      
+                        <type>checkbox</type>
+						<default_value>Y</default_value>
+                    </item>
+					<item id="information">
+					   <type>info</type>
+					   <handler>fn_ee_order_status_tracking_information</handler>
+					</item>					
+                </items>
+            </section>
+        </sections>
+    </settings>
+
+    <functions>
+        <item for="install">fn_ee_order_status_tracking_install</item>
+        <item for="uninstall">fn_ee_order_status_tracking_uninstall</item>
+    </functions>
+</addon>

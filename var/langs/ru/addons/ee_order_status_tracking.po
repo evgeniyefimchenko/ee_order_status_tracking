@@ -1,0 +1,25 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU"
+
+msgctxt "Addons::name::ee_order_status_tracking"
+msgid "ee_order_status_tracking_name"
+msgstr "[efimchenko.ru] Выводит трекинг статусов заказа клиенту и администратору"
+
+msgctxt "Addons::description::ee_order_status_tracking"
+msgid "ee_order_status_tracking_description"
+msgstr "МОдуль сохраняет историю изменения статусов заказа и выводит трекинг статусов согласно своим настройкам."
+
+msgctxt "SettingsSections::ee_order_status_tracking::general"
+msgid "ee_order_status_tracking_general"
+msgstr "Общее"
+
+msgctxt "SettingsOptions::ee_order_status_tracking::show_all_history"
+msgid "ee_order_status_tracking_show_all_history"
+msgstr "Выводить всю историю смены статусов"
+
+msgctxt "SettingsTooltips::ee_order_status_tracking::show_all_history"
+msgid "ee_order_status_tracking_show_all_history_tooltips"
+msgstr "Выведет всю историю смены статусов заказа не зависимо от настроек модуля."
