@@ -1,0 +1,7 @@
+[name^="ee_status_select_order"], [name^="ee_status_select_refund"] {
+	display: block!important;
+	margin-top: 3px!important;
+}
+[name^="ee_status_select_order"] > .opt_red, [name^="ee_status_select_refund"] > .opt_red {
+	color: red;
+}

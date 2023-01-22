@@ -14,10 +14,15 @@
         <sections>
             <section id="general">
                 <items>
-                    <item id="ee_order_status_tracking_active">                      
+                    <item id="show_all_history">                      
                         <type>checkbox</type>
 						<default_value>Y</default_value>
                     </item>
+                    <item id="fill_missing_statuses">                      
+                        <type>checkbox</type>
+						<default_value>N</default_value>
+                    </item>
+					<item id="json_settings"><type>hidden</type><default_value>{}</default_value></item>
 					<item id="information">
 					   <type>info</type>
 					   <handler>fn_ee_order_status_tracking_information</handler>
@@ -26,7 +31,18 @@
             </section>
         </sections>
     </settings>
-
+	<queries>
+		<item for="install">
+		CREATE TABLE IF NOT EXISTS ?:ee_sdek_history_status_track (
+		order_id MEDIUMINT(8) UNSIGNED NOT NULL,
+		type VARCHAR(7) NOT NULL,
+		date VARCHAR(25) NOT NULL,
+		status_code VARCHAR(1) NOT NULL,
+		status_text MEDIUMTEXT NOT NULL DEFAULT '',
+		PRIMARY KEY (order_id)
+		) DEFAULT CHARSET UTF8;
+		</item>
+	</queries>
     <functions>
         <item for="install">fn_ee_order_status_tracking_install</item>
         <item for="uninstall">fn_ee_order_status_tracking_uninstall</item>

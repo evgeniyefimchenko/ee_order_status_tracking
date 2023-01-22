@@ -6,11 +6,11 @@ msgstr "Project-Id-Version: tygh"
 
 msgctxt "Addons::name::ee_order_status_tracking"
 msgid "ee_order_status_tracking_name"
-msgstr "[efimchenko.ru] Выводит трекинг статусов заказа клиенту и администратору"
+msgstr "[efimchenko.ru] Трекинг статусов заказа"
 
 msgctxt "Addons::description::ee_order_status_tracking"
 msgid "ee_order_status_tracking_description"
-msgstr "МОдуль сохраняет историю изменения статусов заказа и выводит трекинг статусов согласно своим настройкам."
+msgstr "Модуль сохраняет историю изменения статусов заказа и выводит трекинг статусов согласно своим настройкам."
 
 msgctxt "SettingsSections::ee_order_status_tracking::general"
 msgid "ee_order_status_tracking_general"
@@ -22,4 +22,20 @@ msgstr "Выводить всю историю смены статусов"
 
 msgctxt "SettingsTooltips::ee_order_status_tracking::show_all_history"
 msgid "ee_order_status_tracking_show_all_history_tooltips"
-msgstr "Выведет всю историю смены статусов заказа не зависимо от настроек модуля."
+msgstr "Выводить всю историю смены статусов, не зависимо от их порядка в модуле."
+
+msgctxt "SettingsOptions::ee_order_status_tracking::fill_missing_statuses"
+msgid "ee_order_status_tracking_fill_missing_statuses"
+msgstr "Дописывать пропущенные статусы"
+
+msgctxt "SettingsTooltips::ee_order_status_tracking::fill_missing_statuses"
+msgid "ee_order_status_tracking_fill_missing_statuses_tooltips"
+msgstr "Дописывать в историю пропущенные статусы. Если в указанном порядке очерёдности следующий статус будет пропущен при смене, то модуль допишет все вышестоящие статусы из настройки."
+
+msgctxt "SettingsOptions::ee_order_status_tracking::information"
+msgid "ee_order_status_tracking_information"
+msgstr "information"
+
+msgctxt "SettingsOptions::ee_order_status_tracking::json_settings"
+msgid "ee_order_status_tracking_json_settings"
+msgstr "json_settings"
