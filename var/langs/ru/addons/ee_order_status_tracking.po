@@ -6,7 +6,7 @@ msgstr "Project-Id-Version: tygh"
 
 msgctxt "Addons::name::ee_order_status_tracking"
 msgid "ee_order_status_tracking_name"
-msgstr "[efimchenko.ru] Трекинг статусов заказа"
+msgstr "[efimchenko.ru] Трекинг статусов заказа(winrace.ru)"
 
 msgctxt "Addons::description::ee_order_status_tracking"
 msgid "ee_order_status_tracking_description"

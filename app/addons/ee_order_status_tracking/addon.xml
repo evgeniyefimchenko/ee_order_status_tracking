@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <addon scheme="3.0">
     <id>ee_order_status_tracking</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <status>active</status>
     <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
     <default_language>ru</default_language>
@@ -9,7 +9,7 @@
     <has_icon>Y</has_icon>
     <supplier>efimchenko.ru</supplier>
     <supplier_link>https://efimchenko.ru</supplier_link>
-
+	<dependencies>ee_sdek_order_verification</dependencies>
     <settings layout="separate" edition_type="ROOT,VENDOR,STOREFRONT">
         <sections>
             <section id="general">
@@ -35,11 +35,12 @@
 		<item for="install">
 		CREATE TABLE IF NOT EXISTS ?:ee_sdek_history_status_track (
 		order_id MEDIUMINT(8) UNSIGNED NOT NULL,
+		shipment_id MEDIUMINT(8) UNSIGNED DEFAULT NULL,
 		type VARCHAR(7) NOT NULL,
-		date VARCHAR(25) NOT NULL,
+		date DATETIME DEFAULT CURRENT_TIMESTAMP,
 		status_code VARCHAR(1) NOT NULL,
 		status_text MEDIUMTEXT NOT NULL DEFAULT '',
-		PRIMARY KEY (order_id)
+		KEY `order_id` (order_id)
 		) DEFAULT CHARSET UTF8;
 		</item>
 	</queries>
