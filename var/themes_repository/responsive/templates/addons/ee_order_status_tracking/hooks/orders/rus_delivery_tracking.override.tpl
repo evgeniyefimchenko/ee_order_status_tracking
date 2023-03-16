@@ -43,8 +43,7 @@
                     </div>
                     <div class="ee_order_status_tracking_refund">
                         {if $arr_refund_track} 
-                            {$refund_images = array("https://devops.winrace.ru/images/thumbnails/50/50/detailed/8/6088015077.jpg", "https://devops.winrace.ru/images/thumbnails/50/46/detailed/8/6095647236.jpg", "https://devops.winrace.ru/images/thumbnails/50/50/detailed/8/6286526674.webp", "https://devops.winrace.ru/images/thumbnails/50/50/detailed/8/6145433526.webp", "https://devops.winrace.ru/images/thumbnails/50/45/detailed/8/6199526462_vnzy-dy.jpg", "https://devops.winrace.ru/images/thumbnails/50/50/detailed/8/6321376821.jpg")}
-                            {*$refund_orders = array("Заказ №1", "Заказ №2", "Заказ №3", "Заказ №4", "Заказ №5", "Заказ №6", "Заказ №7", "Заказ №8", "Заказ №9")*}
+                            {$refund_images = array("https://devops.winrace.ru/images/thumbnails/50/50/detailed/8/6088015077.jpg", "https://devops.winrace.ru/images/thumbnails/50/46/detailed/8/6095647236.jpg", "https://devops.winrace.ru/images/thumbnails/50/50/detailed/8/6286526674.webp", "https://devops.winrace.ru/images/thumbnails/50/50/detailed/8/6145433526.webp", "https://devops.winrace.ru/images/thumbnails/50/45/detailed/8/6199526462_vnzy-dy.jpg", "https://devops.winrace.ru/images/thumbnails/50/50/detailed/8/6321376821.jpg")}                            
                             {$item_refund_track_index = 1}
                             {$count = 0}
                             <ul id="ee_order_status_tracking_refund_menu" onclick="get_order_item_id({$item_refund_track_index}, {count($arr_refund_track)})">
