@@ -19,7 +19,7 @@ function fn_ee_order_status_tracking_uninstall() {
 * Хук при записи статусов от сдэка
 * Нужно получить статус отгрузки
 */
-function fn_ee_order_status_ee_sdek_history_status_change($order_id, $shipment_id, $json) {
+function fn_ee_order_status_tracking_ee_sdek_history_status_change($order_id, $shipment_id, $json) {
 	$cscart_statuses_shipment = fn_get_statuses(STATUSES_SHIPMENT);
 	$shipment_status_code = db_get_field('SELECT status FROM ?:shipments WHERE shipment_id = ?i', $shipment_id);
 	$date = date('Y-m-d H:i:s');
